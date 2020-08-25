@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='lib/jquery.js'></script>
+    <script src="js/scoreConfig.js"></script>
+    <script src='js/script.js'></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Click based game</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Clicked based game</h1>
+        </header>
+        <div class="selectionSection">
+            <p>Difficulty level:</p>
+            <div id='level'>
+                <div id="easy">
+                    <input type="radio" id="easylevel" name="level" value="easy">
+                    <label for="easy">Easy</label>
+                </div>
+
+                <div id="medium">
+                    <input type="radio" id="mediumlevel" name="level" value="medium">
+                    <label for="medium">Medium</label>
+                </div>
+
+                <div id="hard">
+                    <input type="radio" id="hardlevel" name="level" value="hard">
+                    <label for="hard">Hard</label>
+                </div>
+            </div>
+        </div>
+        <div class="scoreboard">
+            <div class="countdown-clock">
+                <span class="time">Timer : </span>
+                <span class="timer"></span>
+            </div>
+            <div class="score">
+                <span>Score : </span>
+                <span class="score-val"></span>
+            </div>
+        </div>
+
+        <div class="play-area">
+            <button id="start">Start</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
